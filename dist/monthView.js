@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.MonthView = void 0;
-class MonthView {
+export class MonthView {
     constructor(calendarElement, calendar) {
         this.calendarElement = calendarElement;
         this.calendar = calendar;
@@ -32,4 +29,3 @@ class MonthView {
         this.calendarElement.appendChild(dayElement);
     }
 }
-exports.MonthView = MonthView;

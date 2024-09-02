@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.DayView = void 0;
-class DayView {
+export class DayView {
     constructor(calendarElement, calendar) {
         this.calendarElement = calendarElement;
         this.calendar = calendar;
@@ -31,4 +28,3 @@ class DayView {
         this.calendarElement.appendChild(slotElement);
     }
 }
-exports.DayView = DayView;

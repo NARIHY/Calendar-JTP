@@ -1,11 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Calendar = void 0;
 // calendar.ts
-const monthView_1 = require("./monthView");
-const weekView_1 = require("./weekView");
-const dayView_1 = require("./dayView");
-class Calendar {
+import { MonthView } from './monthView';
+import { WeekView } from './weekView';
+import { DayView } from './dayView';
+export class Calendar {
     constructor() {
         this.currentDate = new Date();
         this.viewMode = 'month'; // Default view mode
@@ -15,9 +12,9 @@ class Calendar {
         if (!this.calendarElement || !this.monthYearElement) {
             throw new Error("Required DOM elements not found");
         }
-        this.monthView = new monthView_1.MonthView(this.calendarElement, this);
-        this.weekView = new weekView_1.WeekView(this.calendarElement, this);
-        this.dayView = new dayView_1.DayView(this.calendarElement, this);
+        this.monthView = new MonthView(this.calendarElement, this);
+        this.weekView = new WeekView(this.calendarElement, this);
+        this.dayView = new DayView(this.calendarElement, this);
         this.initialize();
     }
     changeView(mode) {
@@ -92,4 +89,3 @@ class Calendar {
         this.updateCalendar(); // Initial render
     }
 }
-exports.Calendar = Calendar;

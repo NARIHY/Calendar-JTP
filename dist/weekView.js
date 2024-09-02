@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.WeekView = void 0;
-class WeekView {
+export class WeekView {
     constructor(calendarElement, calendar) {
         this.calendarElement = calendarElement;
         this.calendar = calendar;
@@ -41,4 +38,3 @@ class WeekView {
         });
     }
 }
-exports.WeekView = WeekView;
