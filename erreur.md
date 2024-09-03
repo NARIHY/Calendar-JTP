@@ -1,0 +1,2 @@
+il y a une erreur lorsque l'on click sur une date en particulière et en est renvoyer vers la vue (on n'est pas renvoyer mais on reste sur la mêmes page)
+Il y a eu aussi une erreur sur le loader, ça bug un peu

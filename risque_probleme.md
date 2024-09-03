@@ -38,7 +38,7 @@ calendar-app/
 1. Clonez le dépôt :
 
    ```bash
-   git clone <URL_DU_DEPOT>
+   git clone <https://github.com/NARIHY/Calendar-JTP>
    cd calendar-app
    ```
 

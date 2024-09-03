@@ -4,10 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calendar App</title>
-  <link rel="stylesheet" href="/src/css/style.css"> <!-- Assurez-vous que le chemin est correct -->
+  <!-- important -->
+  <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/core@6.1.15/main.min.css"> <!-- CSS de FullCalendar -->
+  <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/timegrid@6.1.15/main.min.css"> <!-- CSS de TimeGrid -->
+  <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/daygrid@6.1.15/main.min.css"> <!-- CSS de DayGrid -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css"> <!-- FullCalendar CSS -->
+
+  <!-- base -->
+  <link rel="stylesheet" href="/src/css/styles.css"> <!-- Chemin relatif vers style.css -->
 </head>
 <body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.ts"></script> <!-- Assurez-vous que le chemin est correct -->
+  <div class="container">
+    <div id="menu">
+      <h1>Calendar</h1>
+    </div>
+    <div id="calendar-container">
+      <div id="calendar"></div>
+    </div>
+    
+    <!-- <div id="loader" class="hidden"></div> -->
+  </div>
+ 
+  <script type="module" src="/src/script/main.ts"></script> <!-- Chemin relatif vers Calendar.ts -->
 </body>
 </html>
+
+
+

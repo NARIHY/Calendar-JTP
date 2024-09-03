@@ -2,27 +2,29 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import { createHtmlPlugin } from 'vite-plugin-html';
 
-// Configuration de Vite
 export default defineConfig({
-  root: 'View', // Répertoire racine des fichiers source
+  root: 'View',
   build: {
-    outDir: '../dist', // Répertoire de sortie pour les fichiers construits
-    sourcemap: true, // Générer des sourcemaps pour le débogage
+    outDir: '../dist',
+    sourcemap: true,
+    rollupOptions: {
+      // Si vous utilisez Rollup, configurez les options si nécessaire
+    }
   },
   server: {
-    port: 3000, // Port par défaut
-    open: true, // Ouvrir automatiquement dans le navigateur
+    port: 3000,
+    open: true,
   },
   plugins: [
     createHtmlPlugin({
       inject: {
-        inject: '<link rel="stylesheet" href="/css/style.css">', // Charger le CSS global
+        inject: '<link rel="stylesheet" href="/css/style.css">',
       },
     }),
   ],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
+      '@': resolve(__dirname, 'View'),
     },
   },
 });

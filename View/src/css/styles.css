@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#menu h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#menu#calendar-controls button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#menu button:hover {
+    background-color: #0056b3;
+}
+/* Conteneur centré pour le calendrier */
+#calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Hauteur totale de la fenêtre */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Style du calendrier */
+  #calendar {    
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid #ddd; /* Bordure légère pour le calendrier */
+    border-radius: 8px; /* Coins arrondis pour le calendrier */
+  }
+  
+  /* Style pour les éléments de calendrier */
+  .fc-event {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fc-event:hover {
+    background-color: #ffddc1;
+    border-color: #ffab00;
+    color: #000;
+  }
+  
+  /* Style pour les cellules du calendrier */
+  .fc-daygrid-day:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* View/css/styles.css */
+#calendar-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  #calendar {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  #loader::after {
+    content: 'Loading...';
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Styles pour les boutons de navigation */
+  .fc-header-toolbar {
+    position: relative;
+    z-index: 1;
+  }
+  
