@@ -3,6 +3,10 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import { createWorkingHourEvents } from './events'; // Assurez-vous que cette fonction est correctement exportée
+import { MenuManager } from './Menu/MenuManager';
+
+// Initialisation du gestionnaire de menu
+const menuManager = new MenuManager();
 
 let calendar: Calendar | undefined;
 
