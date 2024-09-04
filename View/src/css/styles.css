@@ -7,7 +7,7 @@
   align-items: center;
   padding: 20px;
   margin-left: 200px; /* Compense la largeur du menu latéral */
-  margin-top: 60px; /* Compense la hauteur du menu supérieur */
+  /* margin-top: 60px; Compense la hauteur du menu supérieur */
   height: calc(100% - 80px); /* Ajuste la hauteur en fonction de la hauteur totale des menus */
   overflow: hidden; /* Empêche le débordement */
 }
