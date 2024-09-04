@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar App</title>
+  <!-- Importation des fichiers CSS de FullCalendar -->
+  <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/core@6.1.15/main.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/timegrid@6.1.15/main.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/daygrid@6.1.15/main.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Importation de vos fichiers CSS -->
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <link rel="stylesheet" href="/src/css/menuManager.css">
+</head>
+<body>
+  <!-- Conteneur pour la barre latérale -->
+  <div id="sidebar">
+    <!-- Contenu de la barre latérale -->
+  </div>
+
+  <!-- Conteneurs pour les menus -->
+  <div id="top-menu-container"></div>
+  <div id="side-menu-container"></div>
+
+  <!-- container -->
+  <div id="container">
+    <div id="menu">
+    </div>
+    <!-- Conteneur principal pour le calendrier -->
+    <div id="calendar-container">
+      <div id="calendar"></div>
+    </div>
+  </div>
+
+  <!-- Conteneur pour le pied de page -->
+  <div id="footer-container">
+    <!-- Contenu du pied de page -->
+  </div>
+
+  <!-- <div id="loader" class="hidden"></div> -->
+
+  <!-- Script TypeScript -->
+  <script type="module" src="/src/script/main.ts"></script>
+</body>
+</html>

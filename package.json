@@ -1,0 +1,26 @@
+{
+  "name": "calendar-jtp",
+  "version": "1.0.0",
+  "description": "création d'un calendrier pour représenter les planings",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RANDRIANARISOA",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.5.2",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vite-plugin-html": "^3.2.2"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/interaction": "^6.1.15",
+    "@fullcalendar/timegrid": "^6.1.15"
+  }
+}
